@@ -1,0 +1,38 @@
+*{
+  padding:0;
+  margin:0;
+}
+
+div{プロパティ:値;}
+.main-contents{
+  color:#333;
+  background-color:#AEF3E7;
+  padding:20px;
+  width:70%;
+}
+/* 1=全方位,2=上下 左右,3=上 左右 下,4=上から右回り それぞれ指定できます */
+#heading1{color:#c33c54;}
+
+.main-contents h2,
+.main-contents h3,
+.main-contents h4,
+.main-contents h5
+{
+  color:#37718E;
+  margin-top: 20px;
+}
+.sub-contents{
+  width: 30%;
+  background-color: #254E70;
+  color:#fff;
+  padding:20px;
+}
+.sub-contents ul{
+  list-style-type: none;
+}
+.sub-contents a{
+  color:#fff;
+}
+.flex-container{
+  display: flex;
+}
