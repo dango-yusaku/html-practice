@@ -1,8 +1,57 @@
 *{
   padding:0;
   margin:0;
+  list-style:none;
+  box-sizing: border-box;
+  font-family: YuGothic, "Yu Gothic", sans-serif;
+}
+.flex-container{
+  display: flex;
+  justify-content: space-between;
+}
+.inner{
+  width:calc(100% - 7vw);
+  margin: 0 auto;
+}
+.header{
+  height: 70px;
+  width:100%;
+  background-color:#fff;
+  justify-content: space-between;
+}
+.header .logo{
+  width: 120px;
+  margin: 20px;
+}
+.header ul.glonavi-main li:last-child a{
+  border-right: 1px solid #C8C8C8;
+}
+.header ul.glonavi-main li:hover,
+.header ul.glonavi-account li:hover{
+  border-bottom: 3px solid #00587c;
 }
 
+.header ul.glonavi-main li ,
+.header ul.glonavi-account li{
+  display: flex;
+  align-items: center;
+  height: 70px;
+  transition:0.3s;
+}
+
+.header ul.glonavi-main li:hover a,
+.header ul.glonavi-account li:hover a{
+  color: #00587c
+}
+.header ul.glonavi-main li a,
+.header ul.glonavi-account li a{
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 div{プロパティ:値;}
 .main-contents{
   color:#333;
@@ -20,19 +69,4 @@ div{プロパティ:値;}
 {
   color:#37718E;
   margin-top: 20px;
-}
-.sub-contents{
-  width: 30%;
-  background-color: #254E70;
-  color:#fff;
-  padding:20px;
-}
-.sub-contents ul{
-  list-style-type: none;
-}
-.sub-contents a{
-  color:#fff;
-}
-.flex-container{
-  display: flex;
 }
