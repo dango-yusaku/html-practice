@@ -26,13 +26,23 @@
 .header ul.glonavi-main li:last-child a{
   border-right: 1px solid #C8C8C8;
 }
+.header ul.glonavi-main li:hover,
+.header ul.glonavi-account li:hover{
+  border-bottom: 3px solid #00587c;
+}
+
 .header ul.glonavi-main li ,
 .header ul.glonavi-account li{
   display: flex;
   align-items: center;
   height: 70px;
+  transition:0.3s;
 }
 
+.header ul.glonavi-main li:hover a,
+.header ul.glonavi-account li:hover a{
+  color: #00587c
+}
 .header ul.glonavi-main li a,
 .header ul.glonavi-account li a{
   font-weight: bold;
